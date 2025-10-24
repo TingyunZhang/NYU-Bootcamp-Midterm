@@ -24,8 +24,8 @@ Explore sentiment dynamics: Quantify and visualize how investor mood fluctuates 
 
 By combining exploratory visualization and quantitative modeling, the study bridges behavioral finance and modern risk theory.
 
-## 3. Data Source
-### 3.1 Market Data (Yahoo Finance)
+### 3. Data Source
+3.1 Market Data (Yahoo Finance)
 
 Using the yfinance API, the script retrieved Tesla’s daily adjusted closing prices, trading volume, and returns from January 2021 to December 2022. Returns were computed as daily percentage changes in adjusted close prices.
 
@@ -151,3 +151,28 @@ To assess economic significance, we simulated the certainty equivalent (CE) for 
 3. ΔCE = +10.6%
 
 This means that during high-sentiment periods, the risk-adjusted welfare of a representative investor improves by about 10.6 percentage points. Optimism thus appears to reduce perceived disaster risk and increase expected utility, even though overall downside risk remains substantial.
+
+Overall, the Poisson–Normal Mixture model offers a structured yet imperfect view of sentiment-driven market behavior—capturing shifts in perceived risk but missing the full complexity of real-world crash dynamics.
+
+### 7. Key Insights and Interpretations
+   
+This project produced several meaningful findings:
+
+1. Behavioral dynamics drive risk: Market risk is not purely statistical but also psychological. Periods of low sentiment coincide with elevated downside risk and frequent crashes.
+
+2. Inverse sentiment–volume relation: Higher investor optimism tends to reduce trading activity — investors hold positions longer when confident.
+
+3. Sentiment predicts future risk: Lagged sentiment negatively correlates with future downside semivariance and crash probability, hinting at predictive value.
+
+4. Model limitations: The Poisson–Normal Mixture captures some aspects of disaster risk but underestimates tail thickness. Incorporating time-varying parameters or heavier-tailed innovations could improve accuracy.
+
+5. Economic relevance: Despite its simplicity, the welfare analysis quantifies the tangible impact of sentiment — optimism may feel good but does not eliminate systemic risk.
+
+
+### 8. Conclusion
+
+This exploratory project demonstrates how social media sentiment and market risk interact dynamically in one of the world’s most volatile and publicly followed stocks.
+Between mid-2021 and mid-2022, Tesla’s investor mood on Reddit fluctuated sharply — often preceding changes in market volatility. The analysis revealed that negative sentiment clusters with downside risk, and that higher optimism tends to coincide with calmer, less volatile periods.
+
+By blending classical finance (downside semivariance, crash risk) with behavioral data (sentiment indices), the study offers a modern perspective on how digital emotions shape real-world asset pricing.
+
