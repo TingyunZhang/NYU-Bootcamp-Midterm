@@ -1,6 +1,9 @@
 # NYU-Bootcamp-Midterm
 
 ## Sentiment, Risk, and Investor Behavior—An Exploratory Study on Tesla (TSLA)
+
+Jiamei Shi (js14017), Siya Xu (sx2436), Tingyun Zhang (tz2674)
+
 ### 1. Introduction
 The modern financial market is increasingly shaped by the flow of online information. From Reddit threads, investor sentiment now moves markets faster than ever before. This project investigates how social-media-driven sentiment relates to Tesla’s stock performance and downside risk. Specifically, the goal is to explore whether changes in public mood can explain or even predict variations in Tesla’s volatility, crash likelihood, and risk-adjusted investor welfare.
 
@@ -178,3 +181,11 @@ This project produced several meaningful findings:
 ### 8. Conclusion
 
 This project looked at how people's feelings about Tesla on social media (like Reddit) are connected to its stock market risk. We found that when investors online became more negative or fearful, it often happened right before the stock became more volatile and risky. On the other hand, when people were feeling optimistic, the stock market was usually calmer. By using Poisson mixture model with data about online moods, this study shows that the emotions people express online can actually influence real-world stock prices. In short, the stock market isn't just about numbers. It's also a social system where people's feelings and the way they share information play a huge role in determining a stock's value and risk.
+
+
+## Reference
+
+Yahoo Finance API — yfinance Python Library, https://pypi.org/project/yfinance/.
+
+Kaggle Dataset: One Year of TSLA on Reddit, https://www.kaggle.com/datasets/pavellexyr/one-year-of-tsla-on-reddit.
+
