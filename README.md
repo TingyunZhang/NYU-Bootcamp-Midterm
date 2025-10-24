@@ -121,3 +121,33 @@ Here,
 ω is the disaster intensity (the expected frequency of crashes).
 
 These parameters were estimated using the method of moments on rolling 60-day windows, allowing the model to evolve over time and reflect changing risk conditions.
+
+5.2 Sentiment and Disaster Intensity
+
+To test whether sentiment helps explain rare-event risk, we ran the following regression:
+
+ωₜ = β₀ + β₁(Sentimentₜ₋₁) + β₂σₜ + εₜ.
+
+The results showed a negative coefficient on sentiment (–3.85), indicating that higher investor optimism is associated with lower perceived disaster intensity. Volatility also had a negative and moderately significant effect (–26.37), suggesting that routine volatility and rare disasters represent distinct sources of risk. The model explained roughly one-third of the variation in disaster intensity (R² = 0.33), which is reasonable given the inherent noise in financial time series.
+
+### 6. Model Validation and Crash Prediction
+
+6.1 Empirical vs. Model-Implied Moments
+
+Comparing rolling skewness and kurtosis of observed returns with model-implied values showed that the PNM captured asymmetry (skewness) reasonably well but struggled to replicate fat tails (kurtosis). This limitation reflects the simplicity of the Type I specification, which allows mean shifts during disasters but keeps volatility constant.
+
+6.2 Crash Probability Calibration
+
+Next, we evaluated the model’s ability to predict extreme events by computing the daily crash probability—the likelihood that returns fall below –5%. The predicted probabilities were broadly consistent with actual crash frequencies, but the relationship was not perfectly monotonic. This indicates that while the model captures broad patterns of risk, it cannot precisely time rare events.
+
+6.3 Welfare Implications
+
+To assess economic significance, we simulated the certainty equivalent (CE) for a risk-averse investor under high- and low-sentiment conditions using a CRRA utility function. Results showed:
+
+1. CE_low = –76.1%
+
+2. CE_high = –65.5%
+
+3. ΔCE = +10.6%
+
+This means that during high-sentiment periods, the risk-adjusted welfare of a representative investor improves by about 10.6 percentage points. Optimism thus appears to reduce perceived disaster risk and increase expected utility, even though overall downside risk remains substantial.
