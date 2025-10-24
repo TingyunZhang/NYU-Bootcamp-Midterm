@@ -1,6 +1,6 @@
 # NYU-Bootcamp-Midterm
 
-## Executive Summary: Sentiment, Risk, and Investor Behavior—An Exploratory Study on Tesla (TSLA)
+## Sentiment, Risk, and Investor Behavior—An Exploratory Study on Tesla (TSLA)
 ### 1. Introduction
 The modern financial market is increasingly shaped by the flow of online information. From Reddit threads, investor sentiment now moves markets faster than ever before. This project investigates how social-media-driven sentiment relates to Tesla’s stock performance and downside risk. Specifically, the goal is to explore whether changes in public mood can explain or even predict variations in Tesla’s volatility, crash likelihood, and risk-adjusted investor welfare.
 
@@ -55,3 +55,38 @@ This preprocessing stage ensured that both behavioral (sentiment) and financial 
 4.1 Sentiment vs. Volume
 
 A scatter plot of average daily sentiment against trading volume revealed a negative correlation, showing that as sentiment became more positive, Tesla’s trading volume tended to decrease.
+
+This counterintuitive result aligns with behavioral finance theory: when investors are optimistic and confident, they are less likely to trade, while pessimism and uncertainty trigger higher trading activity and market churn.
+
+4.2 Downside Risk and Sentiment
+
+Using rolling windows, the 7-day downside semivariance was calculated and plotted against average sentiment.
+
+The scatterplot revealed that as sentiment decreases, downside risk rises, with crash days clustering in regions of low sentiment and high semivariance. This suggests that collective pessimism often coincides with or precedes large downward price swings.
+
+4.3 Returns and Sentiment over Time
+
+Overlaying daily stock returns and sentiment trends over the same period showed a generally positive, but also complex relationship:
+
+1. Generally Positive Relationship: Periods of elevated sentiment often coincided with positive stock returns, while lower sentiment generally aligned with market declines.
+   
+2. High-Volatility Phases: Noticeable fluctuations occurred around November 2021 and early 2022, when both sentiment and returns became unstable.
+  
+3. Lagged Interactions: The connection between sentiment and returns was not perfectly synchronized. At times, changes in sentiment appeared to precede movements in returns, while in other cases, price shifts influenced subsequent sentiment.
+ 
+4. Turning Points: Sentiment occasionally acted as an early indicator of major market movements, signaling shifts before they materialized in prices.
+   
+5. Example Periods: In December 2021, sentiment and returns showed a strong positive correlation during Tesla’s bull phase. Conversely, from March to July 2022, declining sentiment paralleled falling returns, likely reflecting investor anxiety amid rising interest rates.
+
+4.4 Distribution Analysis
+
+Histograms and kernel density plots revealed that Tesla’s returns were right-skewed with fat tails, while sentiment scores were centered slightly above zero with moderate variability.
+
+This implies that, on average, investors were modestly optimistic, though large sentiment swings occurred during volatile periods (e.g., after earnings announcements or Elon Musk’s tweets).
+
+4.5 Correlation Heatmap
+
+A correlation matrix among key variables summarized the relationships:
+
+Sentiment correlated negatively with downside semivariance (–0.34) and crash probability (–0.26).
+
