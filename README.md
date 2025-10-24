@@ -6,7 +6,13 @@ The modern financial market is increasingly shaped by the flow of online informa
 
 Tesla, Inc. (ticker: TSLA) offers a compelling case for such analysis. As one of the most publicly discussed and traded companies, Tesla’s stock has historically been influenced not only by earnings and fundamentals but also by the behavior of its online fanbase. Between July 2021 and July 2022, a period marked by major corporate announcements, product updates, and broad market volatility, Tesla’s price movement reflected the complex interplay between optimism, speculation, and fear.
 
-### 2. Research Motivation
+### 2. Research Motivation and Objectives
+
+The motivation behind this project stems from the growing influence of social media on modern financial markets. Platforms like Reddit and Twitter have transformed how investors exchange information, form opinions, and coordinate trading behavior. These digital interactions often generate collective emotions, such as optimism, fear, or hype, that can move asset prices independently of fundamentals.
+
+Drawing inspiration from concepts studied in the Macroeconomic Foundations for Asset Pricing course, particularly the Poisson–Normal Mixture models used to capture rare-event risk, this project seeks to explore how such emotional dynamics translate into measurable financial risk.
+
+Therefore, our project focus on Tesla (TSLA), a stock that uniquely blends strong fundamentals with a passionate online investor community.
 
 The project’s central question is:
 Does investor sentiment, as expressed on Reddit, influence Tesla’s market risk and crash probability?
