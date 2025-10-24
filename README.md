@@ -88,5 +88,36 @@ This implies that, on average, investors were modestly optimistic, though large 
 
 A correlation matrix among key variables summarized the relationships:
 
-Sentiment correlated negatively with downside semivariance (–0.34) and crash probability (–0.26).
+1. Sentiment correlated negatively with downside semivariance (–0.34) and crash probability (–0.26).
 
+2. Lagged sentiment (1-day, 3-day) also showed negative correlations with future downside risk, suggesting higher sentiment from previous days can potentially predict lower future downside risk.
+
+3. Sentiment and return had a positive correlation, which consistents with the general intuition that optimism aligns with market gains.
+
+### 5. Quantitative Modeling: Poisson–Normal Mixture Framework
+   
+Earlier exploratory analysis revealed intuitive relationships between sentiment and market risk. Lagged sentiment (1-day and 3-day) showed negative correlations with future downside risk, suggesting that higher optimism today is often followed by lower crash likelihood. In addition, sentiment and returns were positively correlated, consistent with the general intuition that investor optimism tends to accompany market gains. These findings motivated a more formal, quantitative approach to examine how sentiment influences the dynamics of tail risk.
+
+5.1 Theoretical Setup
+
+To model these relationships, we adopted the Poisson–Normal Mixture (PNM) framework, which describes stock returns as a combination of two components:
+
+1. A Normal component, representing day-to-day market fluctuations.
+
+2. A Poisson component, representing rare but severe “disaster” events.
+
+Formally, returns are defined as:
+
+ rₜ = μ – jₜθ + εₜ,
+ where jₜ follows a Poisson distribution with intensity ω, and εₜ follows a Normal distribution with variance σ².
+ 
+Here,
+μ is the average daily return,
+
+σ represents normal volatility,
+
+θ is the average size of a crash, and
+
+ω is the disaster intensity (the expected frequency of crashes).
+
+These parameters were estimated using the method of moments on rolling 60-day windows, allowing the model to evolve over time and reflect changing risk conditions.
