@@ -171,8 +171,8 @@ This project produced several meaningful findings:
 
 ### 8. Conclusion
 
-This exploratory project demonstrates how social media sentiment and market risk interact dynamically in one of the world’s most volatile and publicly followed stocks.
-Between mid-2021 and mid-2022, Tesla’s investor mood on Reddit fluctuated sharply — often preceding changes in market volatility. The analysis revealed that negative sentiment clusters with downside risk, and that higher optimism tends to coincide with calmer, less volatile periods.
+This project demonstrates how social media sentiment and market risk interact dynamically in one of the world’s most volatile and publicly followed stocks.
+Between mid-2021 and mid-2022, Tesla’s investor mood on Reddit fluctuated sharply — often preceding changes in market volatility. The analysis revealed that negative sentiment clusters with downside risk, and that higher optimism tends to coincide with calmer, less volatile periods. By blending classical finance (downside semivariance, crash risk) with behavioral data (sentiment indices), the study offers a modern perspective on how digital emotions shape real-world asset pricing. 
 
-By blending classical finance (downside semivariance, crash risk) with behavioral data (sentiment indices), the study offers a modern perspective on how digital emotions shape real-world asset pricing.
+Quantitatively, the Poisson–Normal Mixture model provided a structured way to interpret these effects. While not perfect, it successfully linked sentiment with “disaster intensity” and investor welfare, demonstrating that even noisy social data can inform financial risk assessment. Ultimately, the research findings support the view that markets are social systems: the role of investor psychology and information exchange is as important as fundamental factors.
 
